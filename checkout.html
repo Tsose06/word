@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!--GOOGLE FONTS-->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+     
+    
+    <!--STYLESHEET-->
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <link rel="stylesheet" href="css/checkout.css">
+    <title>Sneakers Store</title>
+</head>
+<body>
+
+    <!--HEADER SECTION-->
+  <header>
+    <div class="container">
+<a href="index.html"><img width="200px" src="img/wordlogowhite.png" alt="logo"></a>
+ 
+           <nav> <ul id="navbar">
+                 <li><a  href="bestsellers.html">Best Sellers</a></li>
+                 <li><a href="shop.html" >Shop</a></li>
+                 <li><a href="newrelease.html">New Release</a></li>
+                 <li><a href="contact.html">Contact Us</a></li>
+                 <li><a href="deliverypolicy.html">Delivery Policy</a></li>
+                 <li><a href="cart.html" class="cart-icon"><i class='bx bx-shopping-bag cart-hide'></i><span class="cart-count"></span></a></li>
+                 <li><a href="#" id="close"><i class='bx bx-x'></i></a></li>
+               </ul>
+            </nav>
+              
+          
+    </div>
+  
+             <div id="mobile">
+                <a  href="cart.html" class="cart-icon"><i id="mobi-cart" class="bx bx-shopping-bag"></i></a>
+                <i id="bar" class='bx bx-menu'></i>
+            </div>
+
+            <div id="mini-cart" class="mini-cart hidden">
+  <h4>Recently Added</h4>
+  <ul class="mini-cart-items"></ul>
+  <a href="cart.html" class="view-all">View All</a>
+            </div>
+        
+  </header>
+
+<!--CHECKOUT SECTION-->
+<div class="checkout-container">
+  <div class="checkout-main">
+    <h2 class="section-title">Contact & Shipping Info</h2>
+    
+    <form name="checkout" method="POST" data-netlify="true" netlify-honeypot="bot-field" onsubmit="return goToPayFast(event)">
+      <input type="hidden" name="form-name" value="checkout" />
+      <input type="hidden" name="bot-field" />
+
+      <label for="country">Country / Region</label>
+     <select name="country" id="country" required>
+      <option value="South Africa" selected>South Africa</option>
+     </select>
+
+      <label for="name">Full Name</label>
+      <input type="text" name="name" id="name" required />
+
+      <label for="email">Email</label>
+      <input type="email" name="email" id="email" required />
+
+      <label for="address">Address</label>
+      <input type="text" name="address" id="address" required />
+
+      <div class="inline-group">
+        <div class="form-group">
+      <label for="city">City</label>
+          <input type="text" name="city" id="city" required />
+        </div>
+        <div class="form-group"><label for="country">Province</label>
+           <select name="country" id="country" required>
+      <option value="South Africa" selected>Easten Cape</option>
+      <option value="South Africa" selected>Free State</option>
+      <option value="South Africa" selected>Gauteng</option>
+      <option value="South Africa" selected>KwaZulu-Natal</option>
+      <option value="South Africa" selected>Limpopo</option>
+      <option value="South Africa" selected>Mpumalanga</option>
+      <option value="South Africa" selected>Northern Cape</option>
+      <option value="South Africa" selected>North West</option>
+      <option value="South Africa" selected>Western Cape</option>
+            </select></div>
+        <div class="form-group"> 
+      <label for="postal">Postal Code</label>
+      <input type="text" name="postal" id="postal" required /></div>
+      </div>
+    
+      <label for="phone">Phone</label>
+      <input type="number" name="phone" value="" required />
+ 
+  <div class="shipping-method">
+  <label>Shipping Method</label>
+  <div class="shipping-option">
+    <input type="radio" name="shipping_method" value="Standard Shipping (2–4 days)" id="shipping" checked>
+    <p class="shipping-text">Standard Shipping (2–4 days)</p>
+    <p class="shipping-price">FREE</p>
+  </div>
+</div>
+
+<div class="checkout-section">
+   <div class="payment-header">
+    <h2 class="section-title">PayFast</h2>
+    <div class="logo-container">
+      <img src="img/card.png" alt="Card" class="payfast-logo" />
+    <img src="img/Visa.png" alt="visa" class="payfast-logo" />
+    <img src="img/instantEFT_hi-Res_logo_png.png" alt="EFT" class="payfast-logo" />
+    </div>
+  
+    
+  </div>
+
+  <div class="payment-body">
+    <div class="card-icon">
+     <img src="img/credit-card.png" alt="EFT" class="payfast-logo" />
+    </div>
+    <p class="payment-description">
+      After clicking “Pay now”, you will be redirected to PayFast to complete your purchase securely.
+    </p>
+    
+  </div>
+</div>
+ 
+      <button class="button" type="submit">Pay Now</button>
+    </form>
+  </div>
+
+  <div class="checkout-summary">
+    <h2 class="section-title">Order Summary</h2>
+    <div class="order-item">
+      <div class="order-details">
+
+        
+      </div>
+    </div>
+    <div class="order-item">
+      <span>Shipping</span>
+      <span class="shipping-price">FREE</span>
+    </div>
+    <p class="summary-total">Total:</p>
+  </div>
+</div>
+
+<!-- Redirect to PayFast after form submission -->
+<form id="payfast-form" action="https://www.payfast.co.za/eng/process" method="post" style="display:none;">
+  <input type="hidden" name="merchant_id" value="10000100"> <!-- Replace with your ID -->
+  <input type="hidden" name="merchant_key" value="46f0cd694581a"> <!-- Replace with your key -->
+  <input type="hidden" name="amount" value="2600.00">
+  <input type="hidden" name="item_name" value="Unlimited Sneakers Order">
+  <input type="hidden" name="return_url" value="https://yourstore.netlify.app/thank-you">
+  <input type="hidden" name="cancel_url" value="https://yourstore.netlify.app/cancelled">
+  <input type="hidden" name="notify_url" value="https://yourstore.netlify.app/payment-notify">
+</form>
+
+
+<!--FOOTER-->
+<footer class="main-footer">
+    <div class="footer-links">
+        <a href="deliverypolicy.html">Delivery Policy</a>
+        <a href="contact.html">Contact Us</a>
+    </div>
+
+    <!-- SUBSCRIPTION SECTION -->
+    <div class="sub-container">   
+          
+            <div class="subscribe">
+                <label for="email-input" id="sub-p">Subscribe to our mail:</label>
+            <div class="email-box">
+                <input type="email" placeholder="Enter your email" id="email-input" required>
+                <button id="sub-arrow-btn" type="submit">→</button> 
+            </div>
+            </div>
+            <div class="subscribe">
+                <p id="folow-p">Follow Us on Socials:</p>
+                <div class="follow-us-icon">
+                    <a href="#"><i id="fb" class='bx bxl-facebook' ></i></a>
+                    <a href=""><i id="insta"class='bx bxl-instagram'></i></a>
+                    <a href=""><i id="twitter" class='bx bxl-twitter'></i></a>
+                </div>
+            </div>
+    </div>
+
+    <!-- GRAY BORDER LINE -->
+    <div class="footer-border"></div>
+
+    <!-- BOTTOM BANNER -->
+    <div class="bottom-banner">
+        <p>© 2023 Word Store. All rights reserved.</p>
+    </div>
+</footer>
+
+<script src="js/product.js"></script>
+<script src="js/script.js"></script>
+<script src="js/checkout.js"></script>
+</body>
+</html>
