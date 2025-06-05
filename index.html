@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!--GOOGLE FONTS-->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+     
+    
+    <!--STYLESHEET-->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Sneakers Store</title>
+</head>
+<body>
+
+    <!--HEADER SECTION-->
+  <header>
+    <div class="container">
+<a href="index.html"><img width="200px" src="img/wordlogowhite.png" alt="logo"></a>
+ 
+           <nav> <ul id="navbar">
+                 <li><a href="bestsellers.html">Best Sellers</a></li>
+                 <li><a href="shop.html">Shop</a></li>
+                 <li><a href="newrelease.html">New Release</a></li>
+                 <li><a href="contact.html">Contact Us</a></li>
+                 <li><a href="deliverypolicy.html">Delivery Policy</a></li>
+                 <li><a href="cart.html" class="cart-icon"><i class='bx bx-shopping-bag cart-hide'></i><span class="cart-count"></span></a></li>
+                 <li><a href="#" id="close"><i class='bx bx-x'></i></a></li>
+               </ul>
+            </nav>
+              
+          
+    </div>
+  
+             <div id="mobile">
+                <a  href="cart.html" class="cart-icon"><i id="mobi-cart" class="bx bx-shopping-bag"></i></a>
+                <i id="bar" class='bx bx-menu'></i>
+            </div>
+
+            <div id="mini-cart" class="mini-cart hidden">
+  <h4>Recently Added</h4>
+  <ul class="mini-cart-items"></ul>
+  <a href="cart.html" class="view-all">View All</a>
+            </div>
+        
+  </header>
+
+<!--HERO SECTION-->
+  <section class="hero">
+        <div class="hero-content">
+            <h1>Welcome to Word Store</h1>
+            <p>Exclusive sneakers that define style and comfort. Be part of the movement.</p>
+            <a href="newrelease.html" class="shop-now-btn">Shop Now</a>
+        </div>
+        <div class="hero-image">
+            <img src="img/hero.png" alt="Sneaker" class="moving-sneaker">
+        </div>
+    </section>
+
+    <!-- NEW RELEASES SECTION -->
+    <section class="release">
+      
+    <h2>New Release</h2>
+    <div class="sneaker-grid js-newrelease-grid" >
+        <!-- Sneaker Card (Repeat for 8 sneakers) -->       
+    </div>
+      
+    <div class="view-all-container">
+        <a href="newrelease.html" class="view-all-btn">View All</a>
+    </div>
+</section>
+
+<!-- CUSTOMER REVIEWS SECTION -->
+<section class="reviews">
+    <p class="review-caption">Curious about WORD in the streets?</p><br>
+    <span>Dive into our reviews and see what our customers think!</span>
+    
+    <div class="review-container">
+        <!-- Review 1 -->
+        <div class="review-card">
+            <p class="review-text">"Absolutely love my New Balance 550s! The comfort and quality are next level!"</p>
+            <div class="star-rating">⭐⭐⭐⭐⭐</div>
+            <span class="reviewer">- Ntando M.</span>
+        </div>
+
+        <!-- Review 2 -->
+        <div class="review-card">
+            <p class="review-text">"Fast shipping, great service! The sneakers fit perfectly. Highly recommend!"</p>
+            <div class="stars">⭐⭐⭐⭐⭐</div>
+            <span class="reviewer">- Sarah L.</span>
+        </div>
+
+        <!-- Review 3 -->
+        <div class="review-card">
+            <p class="review-text">"Amazing sneakers at an unbeatable price. Super stylish and comfy!"</p>
+            <div class="star-rating">⭐⭐⭐⭐⭐</div>
+            <span class="reviewer">- Letlhogonolo T.</span>
+        </div>
+    </div>
+</section>
+
+
+<!-- COLLECTIONS SECTION -->
+<section class="collections">
+    <h2>Collections</h2>
+    <div class="collection-container">
+        <!-- Air Force 1 -->
+        <div class="collection-card">
+            <div class="collection-image">
+                <img src="img/af1w.webp" alt="Air Force 1">
+            </div>
+            <div class="collection-caption">
+                Air Force 1 <span class="arrow">→</span>
+            </div>
+        </div>
+
+        <!-- Dunk Low -->
+        <div class="collection-card">
+            <div class="collection-image">
+                <img src="img/ajg.webp" alt="Air Jordan 1">
+            </div>
+            <div class="collection-caption">
+                Air Jordan 1<span class="arrow">→</span>
+            </div>
+        </div>
+
+        <!-- Air Jordan 4 -->
+        <div class="collection-card">
+            <div class="collection-image">
+                <img src="img/aj4.webp" alt="Air Jordan 4">
+            </div>
+            <div class="collection-caption">
+               Air Jordan 4 <span class="arrow">→</span>
+            </div>
+        </div>
+
+        <!-- Dunk Low-->
+        <div class="collection-card">
+            <div class="collection-image">
+                <img src="img/sbdunk.webp" alt="Dunk Low">
+            </div>
+            <div class="collection-caption">
+                SB Dunk Low <span class="arrow">→</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- VIEW ALL BUTTON -->
+    <div class="view-all-container">
+        <a href="shop.html" class="view-all-btn">View All</a>
+    </div>
+</section>
+
+<!-- BANNER SECTION -->
+<section class="banner">
+    <div class="banner-overlay"></div>
+    <div class="banner-content">
+        <h2>Find your fit, fasten your laces</h2>
+        <p>Discover variety from our daily collections</p>
+    </div>
+</section>
+
+<!--FOOTER-->
+<footer class="main-footer">
+    <div class="footer-links">
+        <a href="deliverypolicy.html">Delivery Policy</a>
+        <a href="contact.html">Contact Us</a>
+    </div>
+
+    <!-- SUBSCRIPTION SECTION -->
+    <div class="sub-container">   
+          
+            <div class="subscribe">
+                <label for="email-input" id="sub-p">Subscribe to our mail:</label>
+            <div class="email-box">
+                <input type="email" placeholder="Enter your email" id="email-input" required>
+                <button id="sub-arrow-btn" type="submit">→</button> 
+            </div>
+            </div>
+            <div class="subscribe">
+                <p id="folow-p">Follow Us on Socials:</p>
+                <div class="follow-us-icon">
+                    <a href="#"><i id="fb" class='bx bxl-facebook' ></i></a>
+                    <a href=""><i id="insta"class='bx bxl-instagram'></i></a>
+                    <a href=""><i id="twitter" class='bx bxl-twitter'></i></a>
+                </div>
+            </div>
+    </div>
+
+    <!-- GRAY BORDER LINE -->
+    <div class="footer-border"></div>
+
+    <!-- BOTTOM BANNER -->
+    <div class="bottom-banner">
+        <p>© 2023 Word Store. All rights reserved.</p>
+    </div>
+</footer>
+
+<script src="js/product.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

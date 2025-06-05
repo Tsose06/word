@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!--GOOGLE FONTS-->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+     
+    
+    <!--STYLESHEET-->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/cart.css">
+    <title>Sneakers Store</title>
+</head>
+<body>
+
+    <!--HEADER SECTION-->
+  <header>
+    <div class="container">
+<a href="index.html"><img width="200px" src="img/wordlogowhite.png" alt="logo"></a>
+ 
+           <nav> <ul id="navbar">
+                 <li><a  href="bestsellers.html">Best Sellers</a></li>
+                 <li><a href="shop.html" >Shop</a></li>
+                 <li><a href="newrelease.html">New Release</a></li>
+                 <li><a href="contact.html">Contact Us</a></li>
+                 <li><a href="deliverypolicy.html">Delivery Policy</a></li>
+                 <li><a href="cart.html" class="cart-icon"><i class='bx bx-shopping-bag cart-hide'></i><span class="cart-count"></span></a></li>
+                 <li><a href="#" id="close"><i class='bx bx-x'></i></a></li>
+               </ul>
+            </nav>
+              
+          
+    </div>
+  
+             <div id="mobile">
+                <a  href="cart.html" class="cart-icon"><i id="mobi-cart" class="bx bx-shopping-bag"></i></a>
+                <i id="bar" class='bx bx-menu'></i>
+            </div>
+
+            <div id="mini-cart" class="mini-cart hidden">
+  <h4>Recently Added</h4>
+  <ul class="mini-cart-items"></ul>
+  <a href="cart.html" class="view-all">View All</a>
+            </div>
+        
+  </header>
+
+<!--CART SECTION-->
+<section><div class="cart-box">
+      <div class="cart-header">
+        <span>Products</span>
+        <span>Price</span>
+        <span>Quantity</span>
+        <span>Total</span>
+        <span>Remove</span>
+      </div>
+
+      <div class="cart-items">
+        
+      </div>
+
+      <div class="cart-total">
+        <h3>Cart Total</h3>
+        <p>Subtotal <span class="subtotal">R0</span></p>
+        <p>Delivery Fee <span>Free</span></p>
+        <p>Grand Total <span class="grand-total">R0</span></p>
+        <button class="btn"> Proceed to Checkout</button>
+      </div>
+    </div></section>
+
+
+
+<!--FOOTER-->
+<footer class="main-footer">
+    <div class="footer-links">
+        <a href="deliverypolicy.html">Delivery Policy</a>
+        <a href="contact.html">Contact Us</a>
+    </div>
+
+    <!-- SUBSCRIPTION SECTION -->
+    <div class="sub-container">   
+          
+            <div class="subscribe">
+                <label for="email-input" id="sub-p">Subscribe to our mail:</label>
+            <div class="email-box">
+                <input type="email" placeholder="Enter your email" id="email-input" required>
+                <button id="sub-arrow-btn" type="submit">→</button> 
+            </div>
+            </div>
+            <div class="subscribe">
+                <p id="folow-p">Follow Us on Socials:</p>
+                <div class="follow-us-icon">
+                    <a href="#"><i id="fb" class='bx bxl-facebook' ></i></a>
+                    <a href=""><i id="insta"class='bx bxl-instagram'></i></a>
+                    <a href=""><i id="twitter" class='bx bxl-twitter'></i></a>
+                </div>
+            </div>
+    </div>
+
+    <!-- GRAY BORDER LINE -->
+    <div class="footer-border"></div>
+
+    <!-- BOTTOM BANNER -->
+    <div class="bottom-banner">
+        <p>© 2023 Word Store. All rights reserved.</p>
+    </div>
+</footer>
+
+<script src="js/product.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

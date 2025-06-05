@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!--GOOGLE FONTS-->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+     
+    
+    <!--STYLESHEET-->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <title>Sneakers Store</title>
+</head>
+<body>
+
+    <!--HEADER SECTION-->
+  <header>
+    <div class="container">
+<a href="index.html"><img width="200px" src="img/wordlogowhite.png" alt="logo"></a>
+ 
+           <nav> <ul id="navbar">
+                 <li><a  href="bestsellers.html">Best Sellers</a></li>
+                 <li><a href="shop.html">Shop</a></li>
+                 <li><a href="newrelease.html">New Release</a></li>
+                 <li><a href="contact.html"  class="active">Contact Us</a></li>
+                 <li><a href="deliverypolicy.html">Delivery Policy</a></li>
+                 <li><a href="cart.html" class="cart-icon"><i class='bx bx-shopping-bag cart-hide'></i><span class="cart-count"></span></a></li>
+                 <li><a href="#" id="close"><i class='bx bx-x'></i></a></li>
+               </ul>
+            </nav>
+              
+          
+    </div>
+  
+             <div id="mobile">
+                <a  href="cart.html" class="cart-icon"><i id="mobi-cart" class="bx bx-shopping-bag"></i></a>
+                <i id="bar" class='bx bx-menu'></i>
+            </div>
+
+            <div id="mini-cart" class="mini-cart hidden">
+  <h4>Recently Added</h4>
+  <ul class="mini-cart-items"></ul>
+  <a href="cart.html" class="view-all">View All</a>
+            </div>
+        
+  </header>
+
+ <section class="contact-container">
+    <div class="contact-section">
+      <h2>Contact Us</h2>
+      <p>
+          <strong>Whatsapp:</strong> 068 052 1075 <br><br>
+          <strong>Email:</strong> support@wordsneakers.co.za <br><br>
+          
+          BEFORE you contact us, here are some answers to common questions:<br><br>
+          
+          <strong>When will I receive my tracking number?</strong><br>
+          You will usually receive your tracking number within 1 to 2 days.<br><br>
+
+          <strong>Why isn't my tracking number working?</strong><br>
+          It may take up to 24 hours for your tracking number to activate once you receive it.<br><br>
+
+          <strong>How fast is the delivery time?</strong><br>
+          3-7 working days<br><br>
+
+          <strong>What is the exchange/return policy?</strong><br>
+          We value our customer experience. If you have any problems with our products, we will gladly fully refund you. Refunds usually reflect after 3 days, depending on your bank.
+      </p>
+    </div>
+
+</section>
+<div class="feedback-container">
+ 
+
+  <form id="feedbackForm" action="https://formspree.io/f/movdggqb" method="POST">
+      <div class="input-group">
+          <input type="text" id="name" name="name" placeholder="Name and Surname" required>
+          <input type="email" id="email" name="email" placeholder="Email Address" required>
+      </div>
+      <input type="tel" id="phone" name="phone" placeholder="Phone Number" required>
+      <textarea id="comment" name="comment" placeholder="Feedback" required></textarea>
+      
+
+      <button class="email-btn" type="submit" >Send</button>
+
+      <div id="successMessage" style="display:none; color: green; margin-top: 10px;">
+  Thank you for your feedback!
+</div>
+  </form>
+</div>
+
+
+<!--FOOTER-->
+<footer class="main-footer">
+    <div class="footer-links">
+        <a href="deliverypolicy.html">Delivery Policy</a>
+        <a href="contact.html">Contact Us</a>
+    </div>
+
+    <!-- SUBSCRIPTION SECTION -->
+    <div class="sub-container">   
+          
+            <div class="subscribe">
+                <label for="email-input" id="sub-p">Subscribe to our mail:</label>
+            <div class="email-box">
+                <input type="email" placeholder="Enter your email" id="email-input" required>
+                <button id="sub-arrow-btn" type="submit">→</button> 
+            </div>
+            </div>
+            <div class="subscribe">
+                <p id="folow-p">Follow Us on Socials:</p>
+                <div class="follow-us-icon">
+                    <a href="#"><i id="fb" class='bx bxl-facebook' ></i></a>
+                    <a href=""><i id="insta"class='bx bxl-instagram'></i></a>
+                    <a href=""><i id="twitter" class='bx bxl-twitter'></i></a>
+                </div>
+            </div>
+    </div>
+
+    <!-- GRAY BORDER LINE -->
+    <div class="footer-border"></div>
+
+    <!-- BOTTOM BANNER -->
+    <div class="bottom-banner">
+        <p>© 2023 Word Store. All rights reserved.</p>
+    </div>
+</footer>
+
+<script src="js/product.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
+

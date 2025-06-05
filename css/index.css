@@ -1,0 +1,353 @@
+/* HERO SECTION */
+.hero {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(44, 44, 44);
+  overflow: hidden;
+}
+
+
+.hero-content {
+  position: absolute;
+  z-index: 2;
+  max-width: 100%; 
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero-content h1 {
+  flex-wrap: wrap;
+  color: var(--white);
+  letter-spacing: 1px;
+  font-size: 4rem;
+  font-weight: 600;
+  margin-bottom: 15px
+}
+
+.hero-content p {
+  font-size: 1.1rem;
+  color: var(--white);
+  margin-bottom: 25px;
+  letter-spacing:1px;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.shop-now-btn {
+  background-color: var(--black);
+  text-decoration: none;
+  color: var(--white);
+  padding: 15px 30px;
+  font-size: 1rem;
+  font-weight: 500;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.6);
+}
+
+.shop-now-btn:hover {
+  box-shadow: 20px -20px 30px rgba(0, 0, 0, 0.1), 
+  10px -10px 30px rgba(0, 0, 0, 0.1),
+   20px 20px 30px var(--pink);
+   transform: translateY(10px);
+}
+
+/* FULL-COVER SNEAKER IMAGE */
+.hero-image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.moving-sneaker {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.6; /* Adjust transparency for readability */
+  animation: float 8s ease-in-out infinite;
+}
+
+/* SNEAKER FLOATING EFFECT */
+@keyframes float {
+  0% { transform: scale(1) translateY(0px); }
+  50% { transform: scale(1.05) translateY(-20px); }
+  100% { transform: scale(1) translateY(0px); }
+}
+
+.release {
+  background-color: white;
+  padding: 20px 50px;
+  text-align: center;
+}
+
+.sneaker-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.sneaker-card {  
+  background-color: var(--white2);
+  padding: 15px;
+  border-radius: 10px;
+  width: 300px;
+  position: relative;
+  transition: 0.3s;
+  text-align: left;
+  margin-bottom: 20px;
+  overflow: hidden;
+ cursor: pointer;
+}
+.sneaker-card:hover {
+  transform: translateY(-5px);
+}
+.sneaker-img {
+  background: var(--white);
+  position:relative ;
+  overflow: hidden;
+}
+.sneaker-img img {
+  max-width: 250px;
+  height: 250px;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+  transition: opacity 0.3s;
+  
+}
+.sneaker-hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+.sneaker-card:hover .sneaker-front {
+  opacity: 0;
+}
+
+.sneaker-card:hover .sneaker-hover {
+  opacity: 1;
+}
+
+/* SNEAKER INFO */
+.sneaker-info {
+  margin-top: 15px;
+}
+
+.sneaker-info h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: var(--black);
+}
+.sneaker-info h3:hover{
+  text-decoration: underline;
+}
+.sneaker-info p {
+  font-size: 1rem;
+  color: var(--grey2);
+  display: block;
+  margin-right: 10px;
+}
+
+/* REVIEWS SECTION */
+.reviews {
+  position: relative;
+ background-color: black;
+  padding: 25px 50px;
+  text-align: center;
+  color: var(--white);
+  background-image: url(/img/zp-bg.jpg);
+  background-size: cover;  
+  background-position: center; 
+  background-repeat: no-repeat;
+}
+.reviews::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.3);  /* Semi-transparent dark overlay */
+  z-index: 1;
+}
+
+/* HEADER TEXT STYLING */
+.review-caption {
+  font-size: 1.7rem; /* Bigger title */
+  font-weight: 600;
+  padding: 10px;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+
+.reviews span {
+  color: var(--white);
+  padding: 8px;
+  border-radius: 5px;
+  display: inline-block;
+  margin-top: 2px;
+}
+
+/* REVIEWS GRID */
+.review-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px; /* Increased space between reviews */
+  flex-wrap: wrap;
+  cursor: pointer;
+  padding-top:15px;
+}
+
+.review-card {
+ background: rgba(250, 250, 250, 0.3);
+  padding: 20px;
+  width: 250px;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.review-card:hover {
+  transform: scale(1.05);
+}
+
+.review-text {
+  color: var(--white);
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+.stars {
+  color: gold;
+  font-size:1rem;
+  
+}
+
+.reviews .reviewer {
+  font-size: 1rem;
+  color: var(--white);
+}
+
+/* COLLECTIONS SECTION */
+.collections {
+  padding: 20px 50px;
+  text-align: center;
+  
+}
+/* COLLECTION GRID */
+.collection-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.collection-card {
+  background: var(--white2);
+  padding: 15px;
+  width: 300px;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.3s;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.collection-card:hover {
+  transform: scale(1.05);
+}
+
+/* COLLECTION IMAGE */
+.collection-image {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.collection-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+}
+
+.collection-card:hover .collection-image img {
+  transform: scale(1.1);
+}
+
+/* COLLECTION CAPTION */
+.collection-caption {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+  background-color: var(--white2);
+  border-radius: 5px;
+  color: var(--black);
+}
+
+.arrow {
+  font-size: 1.2rem;
+}
+
+
+/* BANNER SECTION */
+.banner {
+  position: relative;
+  background-image: url(/img/ad-bg.jpg);
+  background-size: cover;  
+  background-position: center; 
+  background-repeat: no-repeat;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: var(--white);
+  overflow: hidden;
+clip-path: polygon(0 3%, 100% 25%, 100% 100%, 0 89%);
+ 
+}
+.banner::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.3);  /* Semi-transparent dark overlay */
+  z-index: 1;
+}
+
+
+.banner-content {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  padding: 20px;
+}
+
+.banner-content h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: var(--white);
+}
+
+.banner-content p {
+  font-size: 1rem;
+  font-weight: 400;
+}

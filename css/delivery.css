@@ -1,0 +1,31 @@
+
+.contact-container {
+  display: flex;
+  justify-content: center; /* Centers the contact section horizontally */
+  align-items: center; /* Centers it vertically */
+ 
+}
+.contact-section {
+  text-align: center;
+  max-width: 90%; /* Adjusts width for responsiveness */
+  width: 900px;  /* Fixed width for readability */
+  
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+h2 {
+  color: var(--black);
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+p {
+  color: var(--black);
+  word-wrap: break-word; /* Prevents long words from overflowing */
+    text-align: center;
+}
