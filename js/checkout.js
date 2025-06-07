@@ -23,8 +23,8 @@ document.addEventListener("DOMContentLoaded", function () {
         <img src="${item.image}" alt="${item.title}" style="width: 60px; height: 60px; object-fit: cover; border-radius: 6px;">
         <div>
           <strong>${item.title}</strong><br>
-          <small>R${item.price} × ${item.quantity}</small><br>
-          <small>Subtotal: R${subtotal.toFixed(2)}</small>
+          <small>R ${item.price} × ${item.quantity}</small><br>
+          <small>Subtotal: R ${subtotal.toFixed(2)}</small>
         </div>
       </div>
     `;
@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   // Display the total
-  totalText.innerHTML = `Total: R${total.toFixed(2)}`;
+  totalText.innerHTML = `R ${total.toFixed(2)}`;
 
   // Set PayFast hidden input amount
   if (payfastAmountInput) {
