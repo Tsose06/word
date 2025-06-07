@@ -442,6 +442,6 @@ h2{
   }
  
   .sub-container{
-    display: flex;
+    display: grid;
   }
 }
