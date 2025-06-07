@@ -441,8 +441,7 @@ h2{
     font-size: 2rem;
   }
  
-  .sub-container{
-    display: flex;
-    flex-direction: column;
+  #email-sub{
+    display: none;
   }
 }
