@@ -34,8 +34,7 @@ position: sticky; /* Fixes the div in place */
 display: flex;
 justify-content: flex-start;
 flex-direction: column;
-max-width: 560px;
-width:100%;
+flex-wrap: wrap;
 overflow-y: auto;
 }
 .author{
@@ -44,7 +43,7 @@ padding: 10px;
 letter-spacing:2px;
 color: black;
 height: 2.5rem;
-
+margin-bottom: 20px;
 }
 #heading{
 padding: auto;
@@ -54,7 +53,7 @@ font-size: 50px;
 display:flex;
 justify-content: flex-start;
 align-items:center;
-margin-bottom:10px;
+
 padding: 10px;
 letter-spacing:1px;
 }
