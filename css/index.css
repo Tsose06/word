@@ -309,7 +309,7 @@ background-image: url("img/zp-bg.jpg");
 /* BANNER SECTION */
 .banner {
   position: relative;
- background-image: url("../img/ad-bg.jpg");
+ background-image: url("img/ad-bg.jpg");
   background-size: cover;  
   background-position: center; 
   background-repeat: no-repeat;
