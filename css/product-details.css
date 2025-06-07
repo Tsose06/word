@@ -104,10 +104,12 @@ gap: 10px;
 }
 .btns{
   padding: 10px;
+  display: grid;
+
 }
 button{
-  display: block;
-width:100%;
+ display: block;
+
 text-align: center;
 height: 3em;
 cursor: pointer;
