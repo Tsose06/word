@@ -51,8 +51,8 @@ function displayProducts() {
             </div>
             <div class="sneaker-info">
                 <h3>${product.title}</h3>
-                <span class="oldPrice">R${product.price2}</span>
-                <span class="price">R${product.price}</span>
+                <span class="oldPrice">R ${product.price2}</span>
+                <span class="price">R ${product.price}</span>
                 
             </div>
             <span class="sale-tag">Sale</span>
@@ -192,7 +192,7 @@ function displayCart() {
       </div>
       <span class="price">${item.price}</span>
       <div class="quantity"><input type="number" value="${item.quantity}" min="1" data-index="${index}"></div>
-      <span class="total-price">R ${itemTotal.toFixed(2)}</span>
+      <span class="total-price"> ${itemTotal.toFixed(2)}</span>
       <button class="remove" data-index="${index}"><i class='bx bx-message-alt-x remove-btn'></i></i></button>
     `;
 
