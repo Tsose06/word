@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const itemHTML = `
       <div class="checkout-item" style="display: flex;  margin-bottom: 12px;">
-        <img src="${item.image}" alt="${item.title}" style="width: 60px; height: 60px; object-fit: cover; border-radius: 6px;">
+        <img src="${item.image}" alt="${item.title}" style="width: 60px; height: 60px; object-fit: cover; border-radius: 6px; margin-right:5px;">
         <div>
           <strong>${item.title}</strong><br>
           <small>R ${item.price} × ${item.quantity}</small><br>
