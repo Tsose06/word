@@ -110,7 +110,7 @@
 }
 .sneaker-card:hover {
   transform: translateY(-5px);
-}
+}                                             
 .sneaker-img {
   background: var(--white);
   position:relative ;
