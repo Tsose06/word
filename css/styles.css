@@ -441,7 +441,7 @@ h2{
     font-size: 2rem;
   }
  
-  #email-sub{
+  .sub-container #email-sub{
     display: none;
   }
 }
