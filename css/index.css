@@ -167,7 +167,7 @@
   padding: 25px 50px;
   text-align: center;
   color: var(--white);
-  background-image: url(img/zp-bg.jpg);
+background-image: url("../img/zp-bg.jpg");
   background-size: cover;  
   background-position: center; 
   background-repeat: no-repeat;
@@ -309,7 +309,7 @@
 /* BANNER SECTION */
 .banner {
   position: relative;
-  background-image: url(img/ad-bg.jpg);
+  background-image: url(/img/ad-bg.jpg);
   background-size: cover;  
   background-position: center; 
   background-repeat: no-repeat;
