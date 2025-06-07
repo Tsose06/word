@@ -3,7 +3,7 @@
   display: flex;
   justify-content: center; /* Centers the contact section horizontally */
   align-items: center; /* Centers it vertically */
- 
+ padding-top: 50px;
 }
 .contact-section {
   text-align: center;
