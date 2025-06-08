@@ -1,4 +1,3 @@
-/* HERO SECTION */
 .hero {
   position: relative;
   height: 100vh;
@@ -85,44 +84,44 @@
 
 .release {
   background-color: white;
-  padding: 20px 50px;
+  padding: 50px 25px;
   text-align: center;
 }
 
 .sneaker-grid {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
-  gap: 30px;
+  gap: 20px;
 }
 
 .sneaker-card {  
-  flex: 1 1 calc(50% - 10px);
+  background-color: var(--white);
+  padding: 15px;
   border-radius: 10px;
   width: 300px;
   position: relative;
   transition: 0.3s;
   text-align: left;
-  margin-top: 20px;
+  margin-bottom: 20px;
   overflow: hidden;
  cursor: pointer;
  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 .sneaker-card:hover {
-  transform: translateY(-20px);
+  transform: translateY(-5px);
 }                                             
 .sneaker-img {
   background: var(--white);
   position:relative ;
   overflow: hidden;
-  
 }
 .sneaker-img img {
-  
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* makes the image cover the box without distortion */
+  max-width: 250px;
+  height: 250px;
+  object-fit: cover;
   display: block;
+  margin: 0 auto;
   transition: opacity 0.3s;
   
 }
@@ -131,6 +130,7 @@
   top: 0;
   left: 0;
   opacity: 0;
+   
 }
 .sneaker-card:hover .sneaker-front {
   opacity: 0;
@@ -142,13 +142,12 @@
 
 /* SNEAKER INFO */
 .sneaker-info {
-  
-  padding: 15px;
+  margin-top: 15px;
 }
 
 .sneaker-info h3 {
   font-size: 1.1rem;
-  font-weight: 600;
+  font-weight: 500;
   margin-bottom: 5px;
   color: var(--black);
 }
