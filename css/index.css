@@ -87,12 +87,15 @@
   padding: 20px 25px;
   text-align: center;
 }
-
+#release{
+  padding: 130px 25px 25px;
+}
 .sneaker-grid {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   gap: 20px;
+  margin-top: 20px;
 }
 
 .sneaker-card {  
@@ -252,6 +255,7 @@ background-image: url("img/zp-bg.jpg");
   justify-content: center;
   gap: 30px;
   flex-wrap: wrap;
+  margin-top: 20px;
 }
 
 .collection-card {
