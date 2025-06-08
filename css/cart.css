@@ -1,5 +1,5 @@
 .cart-box{
-  padding: 80px 5% 80px;
+  padding: 120px 50px 30px;
 }
 
 .btn{
@@ -70,7 +70,8 @@
 }
 
 .cart-item .quantity input{
-  width: 50px;
+  width: 100px;
+  height: 50px;
   padding: 5px;
   border: 1px solid #ccc;
   outline: none;
@@ -95,7 +96,7 @@
 }
 
 .cart-total h3{
-  margin-bottom: 15px;
+  padding-bottom: 15px;
 }
 
 .cart-total p{
