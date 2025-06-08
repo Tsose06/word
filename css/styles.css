@@ -473,6 +473,8 @@ h2{
   }
   .cart-header{
   display: none;
-  
+}
+.cart-header span{
+  display: none;
 }
 }
