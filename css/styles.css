@@ -471,4 +471,8 @@ h2{
   .cart-total .btn {
     width: 100%;
   }
+  .cart-header{
+  display: none;
+  
+}
 }
